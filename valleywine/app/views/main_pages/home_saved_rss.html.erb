@@ -1,0 +1,142 @@
+<div id="container">
+
+
+  <%= render "header" %>
+
+
+  <div id="main-right">
+    <h3>Serving Central Valley wineries and vineyards</h3>
+
+    <p> Whether you are a home winemaker, grape grower or an existing fully operational family winery, Valley Wine Works can assist with creating a plan or ‘Road Map’ which will assure efficient utilization of resources and greatly increase brand appeal at retail and with consumers.
+    </p>
+
+    <%= image_tag('../../../images/couple-drinking-wine-lunch.jpg') %>
+
+     <div id="twitter_container">
+       <h3 id="twitter_header">
+          <a href="http://wine-blog.bacchusandbeery.com/">
+            <%= @feed_bacchus.title %>
+          </a>
+       </h3>
+
+        <p id="twitter_intro">Bacchus and Berry Latest Blog Headlines</p>
+        <hr/>
+        <div id="rss_bacchus_content">
+          <p>
+            <% count = 0 %>
+            <% for feed in @feed_bacchus.items %>
+
+              <%if count > 4 then %>
+                <% break %>
+              <% else %>
+
+                  <div id="feed_item">
+                    <p id="rss_bacchus_time">
+                        <%= feed.time.strftime("%d %B %Y")%>
+                    </p>
+                    <p id="rss_bacchus_title">
+                      <a href="<%= feed.link %>">
+                        <%= feed.title %>
+                      </a>
+
+                    </p>
+
+
+                   </div>
+              <% end %>
+              <% count = count + 1 %>
+            <% end %>
+        </div>
+      </div>
+  </div>
+
+
+  <div id="main">
+    <h1>Welcome to Valley Wine Works</h1>
+    <h2>Wine Industry Consulting Services</h2>
+
+    <div id="home_text">
+
+
+      <%= image_tag("../../../images/wine-glass-bottle-table-smaller.jpg") %><p>Most new businesses begin as an inspiration, often driven by opportunity and frequently simple passion. For
+        this reason, many new wineries are built and brands launched because the founders have access to wine grapes
+        and/or out of pure love for the pleasures of wine and the lifestyle associated with it. However, this can also
+        be the beginning of an unfamiliar and often frustrating journey for many.</p>
+
+      <p class="main_content">At Valley Wine Works we work with concept or existing wineries and their respective principals, management and
+        workforce to establish well conceived business plans and to consider every facet of today’s very complex wine
+        industry.</p>
+
+      <p class="main_content>Many people think of marketing and sales as being synonymous terms. Related yes, but very different disciplines
+        with individual needs.By definition, marketing explores the opportunities and works to create demand. Sales acts to place
+        the item(s) into the chosen channels accessible to consumers, who it is hoped, will be compelled to a purchase
+        decision (conversion), and based on the efforts and message of marketing.  We will also suggest key marketing tools, critical to creating trade and consumer awareness and
+        demand.</p>
+
+      <p class="main_content>We will also offer direction on tapping into the many channels for distribution of a product, as well as
+        wholesale and retail opportunities, both on premise (restaurants, hotels) and retail (independent and chain
+        grocery and drug stores). We will also consider the lesser-known and emerging means of executing a wine product,
+        such as the internet, direct-to-consumer, wine clubs, etc.</p>
+    </div>
+
+   <div id="rss_wii_container">
+       <h3 id="rss_wii_header">
+          <a href="http://wineindustryinsight.com/">
+            <%= @feed_wii.title %>
+          </a>
+       </h3>
+
+        <p id="rss_wii_intro">Wine Industry Insight Latest News Headlines</p>
+        <hr/>
+        <div id="rss_wii_content">
+          <p>
+            <% count = 0 %>
+            <% for feed in @feed_wii.items %>
+
+              <%if count > 4 then %>
+                <% break %>
+              <% else %>
+
+                  <div id="feed_item">
+                    <p id="rss_wii_time">
+                         <%= feed.time.strftime("%d %B %Y")%>
+                    </p>
+                    <p id="rss_wii_title">
+                      <a href="<%= feed.link %>">
+                        <%= feed.title %>
+                      </a>
+
+                    </p>
+
+
+
+                   </div>
+              <% end %>
+              <% count = count + 1 %>
+            <% end %>
+        </div>
+      </div>
+
+
+
+      <h4>Latest Tweet</h4>
+<%if @latest_status_feeds.present?%>
+  <%  @latest_status_feeds.each do | @latest_status_feed|%>
+    <p>"<%= @latest_status_feed.text %>"
+<span class="time" style="font-size:11px;font-style:italic;">
+<%= convert_date(@latest_status_feed.created_at.to_date) %></span></p>
+
+  <%end%>
+<%end%>
+
+  </div>
+
+
+  <div id="footer">
+    <p>copyright @2011 - Valley Wine works All rights reserved </p>
+
+    <p>site design by Scott Fedorchak, hosted on <a href="http://www.heroku.com">heroku.com </a> </p>
+  </div>
+
+
+</div>

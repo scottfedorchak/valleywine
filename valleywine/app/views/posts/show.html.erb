@@ -1,0 +1,71 @@
+
+<div id="container">
+
+  <%= render "header" %>
+
+
+<div id="main-right">
+
+</div>
+
+
+<div id="main">
+
+  <h1>Blog</h1>
+  
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <h1><%= @post.title %></h1>
+</p>
+
+<p>
+  created at: <%= @post.created_at %>
+  <br/>
+</p>
+<p>
+  <%= raw @post.content %>
+</p>
+
+<p><b>Comments</b></p>
+
+
+<% @admin = false %>
+<%= render :partial => "comments/comment", :collection => @post.comments %>
+
+
+<h2>Add a Comment:</h2>
+<%= render 'comments/form' %>
+<br/>
+
+<%= link_to 'Back', '/blog/list' %>
+
+
+<br />
+
+</div>
+
+<div id="footer">
+  <p> All rights reserved Valley Wine works</p>
+  <p>copyright 2011 </p>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

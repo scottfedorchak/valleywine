@@ -1,0 +1,13 @@
+<div/>
+    <%= flash[:notice] if flash[:notice] %>
+<div>
+
+<div class="blog_login">
+    <p>
+    <% form_tag :controller => 'sessions', :action => 'create' do %>
+      Password: <%= text_field_tag :password %>
+      <%= submit_tag ('Login!') %>
+    <% end %>
+    </p>
+</div>
+

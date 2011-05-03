@@ -1,0 +1,433 @@
+
+* {margin: 0;
+   padding: 0;}
+   
+html {font-size:100.01%;
+    font-family:  sans-serif, Arial, Helvetica;
+}
+			
+body{
+	font-family:  sans-serif, Arial, Helvetica;
+	font-size: 1em;
+    background-image: url(../images/red-background-pattern-wine.jpg);
+    background-repeat: repeat;
+
+}
+
+#container {
+    position:relative;
+    background-image: url(../images/slices/background_repeat_lodi_wine.jpg);
+    background-repeat: repeat;
+	margin: auto;
+	width: 1000px;
+	font-size: .9em;
+    border: groove 6px #660000;
+}			
+
+
+
+#main-right {
+	float: right;
+	width: 250px;
+    hight: 650px;
+	padding: 0px 30px 20px 10px;
+	color: #FFFFFF;
+	margin-right: 20px!important;
+	margin: 360px 20px 30px 20px;
+
+	font-size: .9em;
+    background-color: #669900;
+}
+
+#main-right ul{
+    list-style:none;
+}
+
+
+
+#about-main{
+    font-size: .8em;
+    padding: 320px 10px 10px 20px!important;
+    padding: 30px 10px 10px 20px;
+    margin-left: 18px;
+    margin-right: 230px;
+
+}
+
+#about_mark_fedorchak_image img{
+    padding-left:100px;
+}
+
+#services-main-right{
+    float: right;
+	width: 350px;
+	margin: 350px 10px 10px 40px;
+	padding: 0px 0px 10px 15px;
+    color: #FFFFFF;
+	font-size: .9em;
+    border-left: 1px solid #999900;
+}
+
+#services-main-right img{
+    padding:25px 0px 5px 0px;
+}
+
+#contact-main-right{
+	float: right;
+	padding: 0px 20px 200px 20px;
+	color: #FFFFFF;
+	margin-right: 20px!important;
+	margin: 350px 20px 30px 20px;
+    
+	font-size: .9em;
+}
+
+#main {
+    font-size: 1em;
+	padding: 320px 10px 10px 20px!important;
+	padding: 30px 10px 10px 20px;
+	margin-left: 18px;
+    margin-right: 230px;
+    color:#fff;
+
+}
+
+#main img{
+    float: left;
+    padding: 5px 20px 5px 0px;
+    
+}
+
+#main-right img {
+    padding: 10px 10px 5px 0px;
+    margin-top:10px;
+
+}
+
+#home_text {
+    color:#fff;
+
+
+}
+
+
+
+.main_content{
+    color: #ffffff;
+    line-hight: 1.5;
+    margin: 10px 10px 20px 10px
+
+}
+#services_list ul{
+    font-size:1.2em;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 0px 0px 0px 30px;
+}
+
+#services_list li{
+    list-style: square;
+    font-size: .9em;
+    padding:10px;
+}
+#faq_list ol{
+    font-size:1.2em;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 5px 0px 0px 30px;
+}
+
+#faq_list li{
+    font-size: .9em;
+    padding:10px;
+}
+
+
+
+#contact_list ul{
+    font-size:1.2em;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 0px 0px 15px 30px;
+}
+
+#contact_list li{
+    list-style:none;
+    font-size: .9em;
+}
+
+.smaller_italic{
+    font-size: .7em;
+    font-style: italic;
+}
+
+
+/* footer styles */
+#footer {
+	clear: both;
+    color: #ffcc66;
+    font-size: 12px;
+    background-image: url(../images/slices/footer_valley_wine_works_lodi_vineyard.jpg);
+	background-repeat: no-repeat;
+	height: 50px;
+	text-align: center;
+    padding-top:1px;
+    margin-top: 120px;
+}
+
+#footer-copyright li{
+   padding: 0px 5px 0px 5px;
+}
+
+
+#footer li{
+    list-style:none;
+    display:inline;
+    padding: 3px;
+}
+
+#footer ul{
+    padding-top: 7px;
+}
+
+
+/********** Top navigation *************/
+#navlist
+{
+	height: 32px;
+	padding: 19px 0px 3px 31px;
+
+}
+
+#navlist a, #navlist a:link, #navlist a:visited
+{
+border: 1px solid #FFFFFF;
+padding: 14px;
+padding-left: 0.5em;
+padding-right: 0.5em;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+#navlist a:hover, #navlist a:active, #navlist a:focus
+{
+border: 1px solid #CDCDB3;
+padding: 15px;
+padding-left: 0.5em;
+padding-right: 0.5em;
+text-decoration: none;
+}
+
+#navlist li
+{
+padding-right: 1px;
+display: inline;
+font-size: 0.9em;
+}
+
+#navlist ul
+{
+margin: 0px;
+padding: 0px;
+}
+
+#navlist #active a {
+	background-color: #CDCDB3;
+	color: #000000;
+	font-weight: bold;
+}
+
+
+h1 {
+	font-size:1.4em;
+    color: #cccc00;
+    font-style:italic;
+    margin-bottom:15px;
+    border-bottom: 2px solid #999900;
+
+}
+
+h2 {
+	font-size:1.2em;
+    color: #990000;
+    font-style:italic;
+    margin-bottom:10px;
+
+    
+}
+
+h3 {
+	font-size: 1em;
+    font-family: sans-serif;
+    color: #990000;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-left: 2px;
+}
+
+.h3-underline{
+    border-bottom: 2px solid #990000;
+}
+ 
+textarea {
+        width: 470px;
+        height: 100px;
+        border: 3px solid #cccccc;
+        padding: 5px;
+        font-family: Tahoma, sans-serif;
+
+}
+
+#Table_01{
+    height:200px;
+    border: 3px solid #0033cc;
+
+}
+
+#faq_contact_info{
+    list-style:none;
+}
+
+
+a:link {color: #990000; text-decoration: underline; }
+a:active {color: #006600; text-decoration: underline; }
+a:visited {color: #ffff66; text-decoration: underline; }
+a:hover {color: #CC3300; text-decoration: none; }
+
+
+/*  bacchus blog rss feed styles */
+
+#rss_bacchus_title{
+    font: italic 14px sans-serif;
+    text-decoration:underline;
+    padding: 5px 0px 5px 0px;
+
+}
+
+#rss_bacchus_time{
+    font: bold 10px sans-serif;
+    color: #ffffcc;
+    padding: 5px 0px 5px 0px;
+
+}
+
+#rss_bacchus_body{
+    padding-bottom: 10px;
+}
+
+#twitter_header{
+    font: italic 18px sans-serif;
+    text-align: left;
+    margin-top: 0px;
+}
+
+#twitter_container {
+    width: 290px;
+    font: bold 14px sans-serif;
+    text-align:left;
+    margin-top:50px;
+
+    border-top: 2px solid #e9d26a;
+
+
+}
+
+#twitter_intro{
+    color: #ffffcc;
+    font: bold 16px sans-serif;
+    padding-bottom: 0px;
+
+
+}
+
+#rss_bacchus_content{
+    font: 12px sans-serif;
+    text-align:left;
+    color: #ffffff;
+    width:280px;
+
+}
+
+/* wii rss styles */
+#rss_wii_title{
+    font: italic 14px sans-serif;
+    text-decoration:underline;
+    padding: 5px 0px 0px 5px;
+
+}
+
+#rss_wii_time{
+    font: bold 10px sans-serif;
+    color: #ffffcc;
+    padding: 5px 0px 5px 5px;
+
+}
+
+#rss_wii_body{
+    padding: 0px 0px 10px 5px;
+}
+
+
+#rss_wii_header{
+    font: italic 18px sans-serif;
+    text-align: left;
+    margin-top: 0px;
+}
+
+#rss_wii_container {
+    width: 400px;
+    font: bold 14px sans-serif;
+    text-align:left;
+    margin-top:70px;
+    border-top: 2px solid #e9d26a;
+
+}
+
+#rss_wii_intro{
+    color: #ffffcc;
+    font: bold 16px sans-serif;
+    padding-bottom: 5px;
+
+
+}
+
+#rss_wii_content{
+    font: 12px sans-serif;
+    text-align:left;
+    color: #ffffff;
+    width:590px;
+
+}
+
+/* contact styles */
+#contact_phone{
+    background-color: #336600;
+    color:#000;
+    padding:10px;
+    margin-top: 5px;
+    border: solid 2px #660000;
+    width:230px;
+}
+
+
+
+#li-contact-phone{
+
+    list-style:none; /* removes the default bullet */
+    background: url(../images/icons/iphone-icon-small.png) no-repeat left center;
+    /*adds a background image to the li*/  
+    padding: 10px 0px 5px 35px;
+    /* this would be the width of the background image, plus a little more to space things out properly */
+}
+
+#li-contact-email{
+
+    list-style:none; /* removes the default bullet */
+    background: url(../images/icons/email-icon-small.png) no-repeat left center;
+    /*adds a background image to the li*/
+    padding: 10px 0px 5px 35px;
+    /* this would be the width of the background image, plus a little more to space things out properly */
+}

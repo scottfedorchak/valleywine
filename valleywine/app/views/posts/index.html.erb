@@ -1,0 +1,77 @@
+
+<div id="container">
+
+  <%= render "header" %>
+
+
+<div id="main-right">
+
+</div>
+
+
+<div id="main">
+
+  <h1>Blog</h1>
+
+
+    <% if admin? %>
+        <%= link_to 'New Post', new_post_path %>
+    <% end %>
+
+
+
+
+<% @posts.each do |post| %>
+    <hr/>
+    <p><b><%= post.title %></b></p>
+    created at: <%= post.created_at %>
+    <p><%=  post.content %></p>
+    <%= link_to 'View Details', post %>
+
+    <% if admin? %>
+       <%= button_to 'Edit', { :action => "edit", :id => post.id } %>
+       <%= button_to "Delete Post", { :action => "destroy", :id => post.id }, :confirm => "Are you sure?", :method => :delete %>
+
+    <% end %>
+
+    <hr/>
+<% end %>
+
+
+<br />
+<% if admin? %>
+    <%= link_to 'New Post', new_post_path %>
+<% end %>
+
+</div>
+
+<div id="footer">
+  <p> All rights reserved Valley Wine works</p>
+  <p>copyright 2011 </p>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

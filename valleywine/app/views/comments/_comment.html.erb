@@ -1,0 +1,15 @@
+
+<p>
+  <%= comment.body %>
+  <br/> 
+  created at: <%= comment.created_at %>
+  <br/>
+  <% if admin? %>
+  <%= link_to 'Delete Comment', [comment.post, comment],
+          :conform =>  'Are you sure?',
+          :method => :delete %>
+  <% end %>
+</p>
+
+
+
